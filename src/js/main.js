@@ -1,4 +1,5 @@
-import _ from 'lodash';
+import React from 'react';
+import { render } from 'react-dom';
+import App from './components/App';
 
-const foo = 'Hello, world!';
-console.log(foo);
+render(<App />, document.getElementById('root'));
