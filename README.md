@@ -1,6 +1,14 @@
 # webpackalackin
 Babel + Webpack + React
 
+# How:
+```
+brew install nvm
+nvm install
+npm install
+npm start
+```
+
 # TODO:
 * Implement a `BaseComponent` that has some nice stuff on it (PureRenderMixin)
 * Split up webpack configs
