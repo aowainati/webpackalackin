@@ -11,6 +11,8 @@ app.use(require('webpack-dev-middleware')(COMPILER, {
   publicPath: config.output.publicPath,
 }));
 
+app.use(require('webpack-hot-middleware')(COMPILER));
+
 app.get('*', function(req, res) {
   res.sendFile(path.join(__dirname, 'src/html/index.html'))
 });
