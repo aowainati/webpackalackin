@@ -10,9 +10,9 @@ npm start
 ```
 
 # TODO:
+* ~~Split up webpack configs~~
+* ~~Pull in webpack hot loader~~
 * Implement a `BaseComponent` that has some nice stuff on it (PureRenderMixin)
-* Split up webpack configs
-* Pull in webpack hot loader
 * Snag some `Dapper`
 * Pull in react-router
 * Pull in redux
