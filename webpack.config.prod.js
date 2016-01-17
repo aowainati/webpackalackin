@@ -4,11 +4,12 @@ var webpack = require('webpack');
 module.exports = {
   devtool: 'source-map',
   entry: [
-    './src/index'
+    'babel-polyfill',
+    './src/js/main'
   ],
   output: {
-    path: path.join(__dirname, 'dist'),
-    filename: '[name]-[hash].min.js',
+    path: path.join(__dirname, 'build'),
+    filename: 'bundle.min.js',
     publicPath: '/static/'
   },
   plugins: [
@@ -26,14 +27,15 @@ module.exports = {
     }),
   ],
   module: {
-    loaders: [{
-      loader: 'babel-loader',
-      include: path.join(__dirname, 'src')
-      test: /\.jsx$/,
-      query: {
-        plugins: ['transform-runtime'],
-        presets: ['es2015', 'stage-0', 'react'],
+    loaders: [
+      {
+        loader: 'babel-loader',
+        include: path.join(__dirname, 'src'),
+        test: /\.jsx$/,
       }
-    }]
-  }
+    ]
+  },
+  resolve: {
+    extensions: ['', '.js', '.jsx']
+  },
 };
