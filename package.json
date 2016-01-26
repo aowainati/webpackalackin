@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node devserver.js",
     "clean": "rimraf build",
-    "build": "npm run clean && npm run build:webpack",
+    "build": "npm run clean && mkdir build && npm run build:html && npm run build:webpack",
+    "build:html": "cp -r src/html/* build/",
     "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

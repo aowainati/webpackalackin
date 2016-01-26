@@ -8,8 +8,8 @@ module.exports = {
     './src/js/main'
   ],
   output: {
-    path: path.join(__dirname, 'build'),
-    filename: 'bundle.min.js',
+    path: path.join(__dirname, 'build', 'static'),
+    filename: 'bundle.js',
     publicPath: '/static/'
   },
   plugins: [
