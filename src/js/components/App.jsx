@@ -7,11 +7,9 @@ import React from 'react';
 // TODO : Make a BaseComponent that implements shallowCompare
 export default class App extends React.Component {
   render() {
-    const usaImgSrc = require('../../images/USA.png');
     return (
       <div>
         Hello, world!
-        <img src={usaImgSrc} />
       </div>
     );
   }
