@@ -13,7 +13,7 @@ npm start
 * ~~Split up webpack configs~~
 * ~~Pull in webpack hot loader~~
 * ~~Emit `index.html` as part of build process~~ with hash
-* Test emitting css + images as part of build process
+* ~~Test emitting css + images as part of build process~~
 * Pull in react-router
 * Pull in redux
 * Pull in redux-dev-tools

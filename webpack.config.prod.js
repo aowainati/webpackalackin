@@ -32,7 +32,11 @@ module.exports = {
         loader: 'babel-loader',
         include: path.join(__dirname, 'src'),
         test: /\.jsx$/,
-      }
+      },
+      {
+        loader: 'url-loader?limit=8192',
+        test: /\.(png|jpg)$/,
+      },
     ]
   },
   resolve: {

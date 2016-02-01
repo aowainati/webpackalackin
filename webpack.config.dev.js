@@ -21,12 +21,12 @@ module.exports = {
     loaders: [
       {
         loader: 'babel-loader',
-        // Skip any files outside of your project's `src` directory
-        include: [
-          path.resolve(__dirname, 'src'),
-        ],
-        // Only run `.js` and `.jsx` files through Babel
+        include: path.join(__dirname, 'src'),
         test: /\.jsx?$/,
+      },
+      {
+        loader: 'url-loader?limit=8192',
+        test: /\.(png|jpg)$/,
       },
     ]
   },
