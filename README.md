@@ -12,7 +12,7 @@ npm start
 # TODO:
 * ~~Split up webpack configs~~
 * ~~Pull in webpack hot loader~~
-* Emit `index.html` as part of build process with hash
+* ~~Emit `index.html` as part of build process~~ with hash
 * Test emitting css + images as part of build process
 * Pull in react-router
 * Pull in redux
