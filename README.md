@@ -2,6 +2,7 @@
 Babel + Webpack + React
 
 # How:
+## To develop locally:
 ```
 brew install nvm
 nvm install
