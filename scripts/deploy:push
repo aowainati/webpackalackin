@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -e
+set -x
+
+echo Uploading build directory to bucket: $(cat .s3Bucket)
+aws s3 sync build/ s3://$(cat .s3Bucket)
