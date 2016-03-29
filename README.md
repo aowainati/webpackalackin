@@ -11,6 +11,26 @@ npm install
 npm start
 ```
 
+## Configuration
+
+To inspect the current configuration:
+
+```
+npm run config
+```
+
+Or for a particular variant:
+
+```
+VARIANT=demo npm run config
+```
+
+You may also override individual config values by specifying them as env vars prefixed by `config_`.:
+
+```
+config_apiEndpoint=http://foo.bar.com npm start
+```
+
 ## To deploy:
 ```
 brew install awscli
