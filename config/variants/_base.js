@@ -27,4 +27,7 @@ export default {
 
   // The endpoint to hit for API requests.
   apiEndpoint: null,
+
+  // The S3 bucket to sync built assets to.
+  s3Bucket: null,
 };
