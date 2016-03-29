@@ -1,5 +1,6 @@
 import * as _ from 'lodash';
 import * as childProcess from 'child_process';
+import * as path from 'path';
 
 function execSync(command) {
   return childProcess.execSync(command, {encoding: 'UTF-8'}).trim();
@@ -18,6 +19,8 @@ if (!_.isEmpty(execSync('git status --porcelain'))) {
  * Base configuration that all variants extend.
  */
 export default {
+  rootDir: path.resolve(__dirname, '..', '..'),
+
   fullCommit:  FULL_COMMIT,
   shortCommit: SHORT_COMMIT,
   // We need a monotonically increasing sequence for build identifiers. # of
