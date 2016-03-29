@@ -8,7 +8,6 @@
     "clean": "rimraf build",
     "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-
     "build": "scripts/build",
     "build:html": "scripts/build:html",
     "deploy": "scripts/deploy",
@@ -46,6 +45,7 @@
     "babel-runtime": "^6.3.19",
     "lodash": "^4.0.0",
     "react": "^0.14.6",
+    "react-addons-shallow-compare": "^0.14.7",
     "react-dom": "^0.14.6"
   }
 }

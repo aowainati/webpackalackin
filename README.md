@@ -25,7 +25,7 @@ npm run deploy # clean build and an s3 upload
 * ~~Emit `index.html` as part of build process~~ with hash
 * ~~Test emitting css + images as part of build process~~
 * ~~Re-write deployment scripts to deploy to an S3 bucket~~
-* Implement a `BaseComponent` that has some nice stuff on it (PureRenderMixin)
+* ~~Implement a `BaseComponent` that has some nice stuff on it (PureRenderMixin)~~
 * Integrate `react-router`
 * Integrate `redux`
 * Integrate `redux-interactions`

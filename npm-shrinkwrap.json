@@ -2873,6 +2873,11 @@
       "from": "react@>=0.14.6 <0.15.0",
       "resolved": "https://registry.npmjs.org/react/-/react-0.14.7.tgz"
     },
+    "react-addons-shallow-compare": {
+      "version": "0.14.7",
+      "from": "react-addons-shallow-compare@latest",
+      "resolved": "https://registry.npmjs.org/react-addons-shallow-compare/-/react-addons-shallow-compare-0.14.7.tgz"
+    },
     "react-deep-force-update": {
       "version": "1.0.1",
       "from": "react-deep-force-update@>=1.0.0 <2.0.0",

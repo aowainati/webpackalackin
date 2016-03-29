@@ -1,11 +1,12 @@
 import React from 'react';
 
+import BaseComponent from './BaseComponent.jsx';
+
 /**
  * Entry point into the application.
  */
 
-// TODO : Make a BaseComponent that implements shallowCompare
-export default class App extends React.Component {
+export default class App extends BaseComponent {
   render() {
     return (
       <div>
