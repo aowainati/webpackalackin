@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 (( __CONFIG_INCLUDED__ )) && return
 __CONFIG_INCLUDED__=1
 

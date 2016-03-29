@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 set -e
 
-./scripts/devserver
+./scripts/devserver.sh

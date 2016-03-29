@@ -5,7 +5,7 @@ import express from 'express';
 import hotMiddleware from 'webpack-hot-middleware';
 import webpack from 'webpack';
 
-import webpackConfig from '../webpack.config.dev.babel';
+import webpackConfig from '../webpack.config.development.babel';
 
 const PROJECT_ROOT = path.resolve(__dirname, '..');
 const COMPILER = webpack(webpackConfig);

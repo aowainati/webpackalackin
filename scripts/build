@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-set -e
-set -x
-
-npm run clean
-mkdir build
-npm run build:html
-npm run build:webpack
