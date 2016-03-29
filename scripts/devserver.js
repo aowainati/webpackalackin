@@ -16,7 +16,6 @@ var app = express();
 app.use(devMiddleware(COMPILER, {
   noInfo: true,
   publicPath: webpackConfig.output.publicPath,
-  watchOptions: {},
 }));
 
 app.use(hotMiddleware(COMPILER));
