@@ -6,6 +6,7 @@ Babel + Webpack + React
 ```
 brew install nvm
 nvm install
+npm install -g $(cat .npm-version)
 npm install
 npm start
 ```

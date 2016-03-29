@@ -13,11 +13,11 @@ app.use(require('webpack-dev-middleware')(COMPILER, {
 
 app.use(require('webpack-hot-middleware')(COMPILER));
 
-app.get('*', function(req, res) {
+app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname, 'src/html/index.html'));
 });
 
-const PORT = 3000;
+const PORT = 3006;
 app.listen(PORT, function() {
   console.log('Server ready on port', PORT);
 });
