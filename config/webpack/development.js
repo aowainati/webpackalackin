@@ -1,6 +1,8 @@
 import * as path from 'path';
 import * as webpack from 'webpack';
 
+import * as config from '..';
+
 export default {
   devtool: 'cheap-module-eval-source-map',
   entry: [
@@ -9,7 +11,7 @@ export default {
     './src/js/main'
   ],
   output: {
-    path: path.join(__dirname, 'build', 'static'),
+    path: path.join(config.current.rootDir, 'build', 'static'),
     filename: 'bundle.js',
     publicPath: '/static/',
   },
@@ -21,7 +23,7 @@ export default {
     loaders: [
       {
         loader: 'babel-loader',
-        include: path.join(__dirname, 'src'),
+        include: path.join(config.current.rootDir, 'src'),
         test: /\.jsx?$/,
       },
       {
