@@ -3,6 +3,8 @@ import * as webpack from 'webpack';
 
 import * as config from '..';
 
+const ROOT_DIR = config.current.rootDir;
+
 export default {
   devtool: 'source-map',
   entry: [
@@ -10,16 +12,17 @@ export default {
     './src/js/main'
   ],
   output: {
-    path: path.join(config.current.rootDir, 'build', 'static'),
+    path: path.join(ROOT_DIR, 'build', 'static'),
     filename: 'bundle.js',
     publicPath: '/static/'
   },
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.DefinePlugin({
-      'process.env': {
-        'NODE_ENV': JSON.stringify('production')
-      }
+      // Expand config values into `__CONFIG__.path.to.value`
+      '__CONFIG__': config.flatten(config.current, '__CONFIG__.', '.'),
+      // For dependencies like React and Redux that expect this to exist.
+      'process.env.NODE_ENV': config.current.variant,
     }),
     new webpack.optimize.UglifyJsPlugin({
       compressor: {
@@ -32,7 +35,7 @@ export default {
     loaders: [
       {
         loader: 'babel-loader',
-        include: path.join(config.current.rootDir, 'src'),
+        include: path.join(ROOT_DIR, 'src'),
         test: /\.jsx$/,
       },
       {

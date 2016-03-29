@@ -1,3 +1,3 @@
 import * as config from '..';
 
-export default require(`./${config.current.variant}`);
+export default require(`./${config.current.variant}`).default;
