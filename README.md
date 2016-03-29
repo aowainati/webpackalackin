@@ -25,11 +25,13 @@ npm run deploy # clean build and an s3 upload
 * ~~Emit `index.html` as part of build process~~ with hash
 * ~~Test emitting css + images as part of build process~~
 * ~~Re-write deployment scripts to deploy to an S3 bucket~~
-* Add module aliases for easier imports
 * Implement a `BaseComponent` that has some nice stuff on it (PureRenderMixin)
-* Pull in react-router
-* Pull in redux
-* Pull in redux-dev-tools
-* Integrate API framework with `redux`
+* Integrate `react-router`
+* Integrate `redux`
+* Integrate `redux-interactions`
+* Integrate `redux-dev-tools` (reducer configuration, not the React component)
 * Snag some `Dapper` and `Modulate`
-* Add build tools for making a new static website bucket
+* Add module aliases for easier imports
+* Add .eslintrc
+* Set up unit tests
+* Add file watcher for automatic test running
