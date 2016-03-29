@@ -5,13 +5,14 @@ import express from 'express';
 import hotMiddleware from 'webpack-hot-middleware';
 import webpack from 'webpack';
 
-import webpackConfig from '../webpack.config.development.babel';
+import webpackConfig from '../config/webpack/index.babel';
 
 const PROJECT_ROOT = path.resolve(__dirname, '..');
 const COMPILER = webpack(webpackConfig);
 const PORT = 3006 || process.env.PORT;
 
 var app = express();
+
 app.use(devMiddleware(COMPILER, {
   noInfo: true,
   publicPath: webpackConfig.output.publicPath,

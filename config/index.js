@@ -78,11 +78,19 @@ export function flatten(object, prefix = ENV_PREFIX, separator = '_') {
 
   _.each(object, (value, key) => {
     if (_.isPlainObject(value)) {
-      Object.assign(result, flatten(value, `${ENV_PREFIX}${key}${separator}`, separator));
+      Object.assign(result, flatten(value, `${prefix}${key}${separator}`, separator));
     } else {
-      result[`${ENV_PREFIX}${key}`] = value;
+      result[`${prefix}${key}`] = value;
     }
   });
 
   return result;
+}
+
+/**
+ * Flattens configuration into keys with escaped values suitable for webpack's
+ * DefinePlugin.
+ */
+export function defines(object) {
+  return _.mapValues(flatten(object, '', '.'), (v) => JSON.stringify(v));
 }
