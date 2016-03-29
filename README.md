@@ -15,8 +15,7 @@ npm start
 ```
 brew install awscli
 aws configure # follow prompts to configure credentials + region
-echo <name of your s3 bucket> > .s3bucket # you'll probably want to commit this file to the repo, too
-npm run deploy # clean build and an s3 upload
+VARIANT=production npm run deploy # clean build and an s3 upload
 ```
 
 # TODO:
