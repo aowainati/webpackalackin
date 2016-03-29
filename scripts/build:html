@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 set -e
-set -x
 
 echo Copying HTML files to build directory
 cp -r src/html/* build/
