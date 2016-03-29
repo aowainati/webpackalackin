@@ -12,6 +12,7 @@ export default class App extends BaseComponent {
       <div>
         <p>Hello, world!</p>
         <p>Build variant: {__CONFIG__.variant}</p>
+        <p>apiEndpoint: {__CONFIG__.apiEndpoint}</p>
       </div>
     );
   }
