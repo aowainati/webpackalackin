@@ -6,7 +6,7 @@ import BaseComponent from './BaseComponent';
  * Entry point into the application.
  */
 
-export default class App extends BaseComponent {
+export default class App extends React.Component {
   render() {
     return (
       <div>
