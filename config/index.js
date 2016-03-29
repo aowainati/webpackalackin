@@ -59,7 +59,13 @@ function injectOverrides(config) {
  */
 export function stringifyForShell(config) {
   const flatConfig = flatten(config);
-  const lines = _.map(flatConfig, (value, key) => `${key}=${JSON.stringify(value)}`);
+  const lines = _.map(flatConfig, (value, key) => {
+    if (value == null) {
+      return `${key}=`;
+    } else {
+      return `${key}=${JSON.stringify(value)}`;
+    }
+  });
   return lines.join('\n');
 }
 
