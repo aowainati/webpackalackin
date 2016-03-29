@@ -1,7 +1,7 @@
-var path = require('path');
-var webpack = require('webpack');
+import * as path from 'path';
+import * as webpack from 'webpack';
 
-module.exports = {
+export default {
   devtool: 'source-map',
   entry: [
     'babel-polyfill',
