@@ -23,7 +23,7 @@ export default {
   // We need a monotonically increasing sequence for build identifiers. # of
   // commits is a great proxy for that, considering that the only things that
   // actually care about a build number are for builds against master.
-  buildNum: process.env.CIRCLE_BUILD_NUM,
+  buildNum: null,
 
   // The endpoint to hit for API requests.
   apiEndpoint: null,

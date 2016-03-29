@@ -1,7 +1,8 @@
 import myLocalIp from 'my-local-ip';
 
-// While we'd prefer to use a `.local` hostname, it's not practical in many
-// situations: Android doesn't resolve `.local` at all, public wifi, etc.
+// By using your machine's IP address rather than localhost, you can now share
+// your dev server w/ other folk on the network, and everything else should wire
+// up without extra configuration!
 const DEV_MACHINE_ADDRESS = myLocalIp();
 
 /**
