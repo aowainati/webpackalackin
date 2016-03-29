@@ -2,7 +2,7 @@
 import * as path from 'path';
 import devMiddleware from 'webpack-dev-middleware';
 import express from 'express';
-import hostMiddleware from 'webpack-hot-middleware';
+import hotMiddleware from 'webpack-hot-middleware';
 import webpack from 'webpack';
 
 import webpackConfig from '../webpack.config.dev.babel';
@@ -17,7 +17,7 @@ app.use(devMiddleware(COMPILER, {
   publicPath: webpackConfig.output.publicPath,
 }));
 
-app.use(hostMiddleware(COMPILER));
+app.use(hotMiddleware(COMPILER));
 
 app.get('/*', function(req, res) {
   res.sendFile(path.join(PROJECT_ROOT, 'src/html/index.html'));
