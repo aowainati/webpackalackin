@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-set -e
-
-source ./scripts/include/config
-
-webpack --config webpack.config.${config_variant}.js

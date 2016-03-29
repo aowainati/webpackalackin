@@ -4,16 +4,15 @@
   "description": "Babel + Webpack + React",
   "main": "src/main.jsx",
   "scripts": {
-    "build:html": "scripts/build:html",
-    "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js",
-    "build": "scripts/build",
-    "clean": "rimraf build",
-    "config": "scripts/config",
-    "devserver": "scripts/devserver",
-    "deploy:push": "scripts/deploy:push",
-    "deploy": "scripts/deploy",
-    "start": "scripts/devserver",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:html": "scripts/build:html.sh",
+    "build:webpack": "scripts/build:webpack.sh",
+    "build": "scripts/build.sh",
+    "clean": "scripts/clean.sh",
+    "config": "scripts/config.js",
+    "devserver": "scripts/devserver.js",
+    "deploy:push": "scripts/deploy:push.sh",
+    "deploy": "scripts/deploy.sh",
+    "start": "scripts/devserver.js"
   },
   "repository": {
     "type": "git",

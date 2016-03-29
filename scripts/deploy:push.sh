@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-source ./scripts/include/config
+source ./scripts/include/config.sh
 
 if [[ "${config_s3Bucket}" == "" ]]; then
   echo "No s3Bucket specified for config variant '${config_variant}'"

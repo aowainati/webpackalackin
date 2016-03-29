@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-set -e
-
-./scripts/clean
-mkdir build
-./scripts build:html
-./scripts build:webpack
