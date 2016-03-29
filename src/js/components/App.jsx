@@ -6,11 +6,11 @@ import BaseComponent from './BaseComponent.jsx';
  * Entry point into the application.
  */
 
-export default class App extends BaseComponent {
+export default class App extends React.Component {
   render() {
     return (
       <div>
-        Hello, world!
+        <p>Hello, world!</p>
       </div>
     );
   }
