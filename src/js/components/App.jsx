@@ -1,12 +1,10 @@
 import React from 'react';
 
-import BaseComponent from './BaseComponent';
+import TheButton from './TheButton';
 
 /**
  * Entry point into the application.
  */
-
-const FLAG = require('../../images/USA.png');
 
 export default class App extends React.Component {
   render() {
@@ -15,7 +13,7 @@ export default class App extends React.Component {
         <p>Hello, world!</p>
         <p>Build variant: {__CONFIG__.variant}</p>
         <p>apiEndpoint: {__CONFIG__.apiEndpoint}</p>
-        <img src={FLAG} />
+        <TheButton />
       </div>
     );
   }

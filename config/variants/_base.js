@@ -33,4 +33,7 @@ export default {
 
   // The S3 bucket to sync built assets to.
   s3Bucket: null,
+
+  // Whether or not react dev mode should be enabled
+  reactDevEnabled: false,
 };
