@@ -50,6 +50,6 @@ VARIANT=production npm run deploy # clean build and an s3 upload
 * ~~Integrate `combined-reduction`~~
 * ~~Integrate `redux-dev-tools` (reducer configuration, not the React component)~~
 * ~~Set up unit tests~~
-* Integrate `react-router`
+* ~~Integrate `react-router`~~
 * Add .eslintrc
 * Add file watcher for automatic test running
