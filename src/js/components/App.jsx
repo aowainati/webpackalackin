@@ -5,7 +5,6 @@ import TheButton from './TheButton';
 /**
  * Entry point into the application.
  */
-
 export default class App extends React.Component {
   render() {
     return (
