@@ -45,12 +45,11 @@ VARIANT=production npm run deploy # clean build and an s3 upload
 * ~~Test emitting css + images as part of build process~~
 * ~~Re-write deployment scripts to deploy to an S3 bucket~~
 * ~~Implement a `BaseComponent` that has some nice stuff on it (PureRenderMixin)~~
+* ~~Integrate `redux`~~
+* ~~Integrate `redux-interactions`~~
+* ~~Integrate `combined-reduction`~~
+* ~~Integrate `redux-dev-tools` (reducer configuration, not the React component)~~
+* ~~Set up unit tests~~
 * Integrate `react-router`
-* Integrate `redux`
-* Integrate `redux-interactions`
-* Integrate `redux-dev-tools` (reducer configuration, not the React component)
-* Snag some `Dapper` and `Modulate`
-* Add module aliases for easier imports
 * Add .eslintrc
-* Set up unit tests
 * Add file watcher for automatic test running

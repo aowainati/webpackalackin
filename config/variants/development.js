@@ -13,4 +13,5 @@ export default {
   // up to date - 'cause dev mode!
   buildNum: Number.MAX_SAFE_INTEGER,
   apiEndpoint: `http://${DEV_MACHINE_ADDRESS}:3000`,
+  reactDevEnabled: true,
 };
