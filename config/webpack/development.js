@@ -21,8 +21,6 @@ export default {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
     new webpack.DefinePlugin({
-      // Expand config values into `__CONFIG__.path.to.value`
-      '__CONFIG__': config.defines(config.current),
       // For dependencies like React and Redux that expect this to exist.
       'process.env.NODE_ENV': JSON.stringify(config.current.variant),
     }),
